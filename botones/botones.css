@@ -1,0 +1,121 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+}
+
+#barra  svg {
+    height: 40px;
+    width: 40px;
+}
+
+#barra {
+    background-color: #7CB4E4;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#contenedor {
+    height: 92.9%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#boton-1 {
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 5px;
+    border: solid 1px #0d6efd;
+    padding: 8px 15px;
+    width: 200px;
+}
+
+#boton-1:hover {
+    background-color: white;
+    color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+#boton-2 {
+    background-color: white;
+    color: #0d6efd;
+    border-radius: 5px;
+    border: solid 1px #0d6efd;
+    padding: 8px 15px;
+    width: 200px;
+}
+
+#boton-2:hover {
+    background-color: #f1f1f1;
+    color: #0a5fe9;
+    border-color: #0a5fe9;
+}
+
+#boton-3 {
+    background-color: #0d6efd;
+    color: white;
+    border: solid 1px #0d6efd;
+    border-radius: 20px;
+    padding: 8px 15px;
+    width: 200px;
+}
+
+
+
+#boton-4 {
+    background-color: white;
+    color: #0d6efd;
+    border: solid #0d6efd 1px;
+    padding: 8px 15px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+#boton-5 {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 22px 25px;
+}
+
+#boton-6 {
+    background-color: white;
+    color: #0d6efd;
+    border: solid 1px #0d6efd;
+    padding: 22px 25px;
+    border-radius: 50%;
+}
+
+button {
+    cursor: pointer;
+}
+
+div {
+    display: flex;
+
+}
+
+#boton-buscar {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 7px 8px 5px 8px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#input-buscar {
+    height: 28px;
+    border-radius: 0px;
+    border-width: thin; 
+}
+
+
+

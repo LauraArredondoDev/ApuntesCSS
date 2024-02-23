@@ -1,0 +1,36 @@
+body {
+    margin: 0px;
+}
+
+#barra {
+    background-color: #7CB4E4;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+svg {
+    width: 40px;
+    height: 40px;
+}
+
+button {
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+    background-color: #43cd66;
+    position: fixed; /* El botón de whatsapp se queda flotando fijo en la misma posición aunque haga scroll*/
+    top: 85%;
+    left: 95%;
+}
+
+#boton {
+    border-radius: 5px;
+    background-color: #ff7f50;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    color: black;
+    font-weight: 600;
+}

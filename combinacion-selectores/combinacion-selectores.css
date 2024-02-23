@@ -1,0 +1,67 @@
+body {
+    margin: 0px;
+}
+
+svg {
+    height: 40px;
+    width: 40px;
+}
+
+#barra {
+    background-color: #7CB4E4;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    border: none;
+}
+
+div {
+    padding: 10px;
+    border: solid;
+}
+
+.tam1 {
+    height: 600px;
+    width: 600px;
+}
+
+.tam2 {
+    height: 400px;
+    width: 400px;
+}
+
+.tam3 {
+    height: 200px;
+    width: 200px;
+}
+
+div > h3 {
+    color: darkorchid;
+}
+
+#conj-caja-1 > .tam2 > .tam3 > span > p { /* Seleccioname un P que esté inmediatamente dentro de un span
+                                            que esté inmediatamente dentro de la clase tam3 que esté inmediatamente
+                                            dentro de la clase tam2 que esté inmediatamente dentro de un id cont-caja-1*/
+    color: burlywood;
+}
+
+#conj-caja-2 p { /* Seleccioname un P que esté dentro del id cont-caja-2 
+                    independientemente de lo que haya entre medias */
+
+    color: cornflowerblue;
+}
+
+h4, h6 { /*Seleccioname el h4 y además el h6 */
+    
+    color: brown;
+}
+
+h5 {
+    color: darkgreen;
+}
+
+
+

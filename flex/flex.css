@@ -1,0 +1,175 @@
+.caja {
+    width: 800px;
+    height: 300px;
+    border: solid;
+    display: flex;
+}
+
+.caja-1 {
+    justify-content: center;
+
+    align-items: center;
+}
+
+.caja-2 {
+    background-color: ;
+    width: 800px;
+    height: 300px;
+    border: solid; 
+    display: flex;
+    justify-content: right; /*mover cosas en horizontal*/
+    align-items: center; /*mover cosas en vertical*/
+}
+
+.caja-3 {
+    width: 800px;
+    height: 300px;
+    border: solid;
+    display: flex;
+    justify-content: left;
+    align-items:start;
+    flex-direction: row;/*esto es en fila. Por defecto siempre se pone asi si no especificas el flex direction*/
+}
+
+.caja-4 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.caja-5 {
+    width: 800px;
+    height: 300px;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+
+    /*Si cambiamos el flex-direction y lo ponemos en column justify-content y aling-item funcionan al reves, se invierte.*/
+    justify-content: start;
+    align-items: center;
+}
+
+.caja-6 {
+    width: 800px;
+    height: 300px;
+    border: solid;
+    display: flex;
+    justify-content: left;
+    align-items:start;
+    gap: 10px; /* gap sirve para dejar espacio entre cualquier cosa que esté dentro de la misma caja*/
+}
+
+.caja-7 {
+    width: 800px;
+    height: 300px;
+    border: solid;
+    display: flex;
+    justify-content: space-between; /*space-between pone todo el espacio posible entre los hijos del contenedor (entre los elementos de dentro de la caja)*/
+    align-items:start;
+}
+
+.caja-8 {
+    width: 800px;
+    height: 300px;
+    border: solid;
+    display: flex;
+    justify-content: space-around; /*space-around pone todo el espacio posible al rededor de los hijos del contenedor (al rededor de los elementos de dentro de la caja)*/
+    align-items:start;
+}
+
+.caja-9 {
+    width: 800px;
+    height: 300px;
+    border: solid;
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+}
+
+.caja-10 {
+    width: 800px;
+    height: 300px;
+    border: solid;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    gap: 30px;
+    resize: horizontal;
+    overflow: auto;
+    flex-wrap: wrap;
+}
+
+.div {
+    border: solid;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+#seccion-explicacion {
+    width: 800px;
+}
+
+#articulo-explicacion {
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin-bottom: 0px;
+}
+
+#barra {
+    background-color: #7CB4E4;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+svg {
+    height: 40px;
+    width: 40px;
+}
+
+/*ESTO ES SOLO UN EJEMPLO, NO SE ESTÁ UTILIZANDO SOBRE NINGÚN ELEMENTO DE LA PÁGINA HTML*/
+.contenedor {
+    display: flex; /*PASO 1: Cambiar el display a flex para que me deje usar 
+                            flex-direcion, align-items, justify-content y gap*/
+
+    flex-direction: row; /*PASO 2: Poner la dirección de los hijos en este caso 
+                                    irán en fila. (Si no pongo el flex-direction,
+                                    por defecto se van a poner en fila, es decir
+                                    no poner nada es lo mismo que poner 
+                                    flex-direction: row)*/
+
+    justify-content: start; /*PASO 3: Mover horizontalmente (de izquierda a derecha) 
+                                        a los hijos del contenedor,en este caso al 
+                                        principio horizontalmente, es decir, a la 
+                                        izquierda*/
+
+    align-items: end; /*PASO 4: Mover verticalmente (de arriba a abajo) a los hijos
+                                del contenedor, en este caso al final verticalmente,
+                                es decir, abajo*/
+
+    /*ES IMPORTANTE RECORDAR QUE justify-content y align-items FUNCIONAN AL REVÉS CUANDO
+    LOS ELEMENTOS SE MUESTRAN EN FILA Y CUANDO SE MUESTRAN EN COLUMNA, CUANDO SE MUESTRAN
+    EN COLUMNA, justify-content SIRVE PARA ALINEAR LOS ELEMENTOS HIJO VERTICALMENTE
+    (DE ARRIBA A ABAJO) Y align-items SIRVE PARA ALINEAR LOS ELEMENTOS HIJO HORIZONTALMENTE
+    (DE IZQUIERDA A DERECHA)*/                            
+
+    gap: 10px; /*PASO OPCIONAL: Dejar un espacio entre los hijos del contenedor, en este 
+                                caso se deja un espacio de 10 pixeles entre cada hijo*/
+}

@@ -1,0 +1,16 @@
+body {
+    height: 100vh;
+    background-image: url("/efecto-glass/montaña.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    height: 400px;
+    width: 300px;
+    border: solid 1px gray;
+    background: transparent; 
+    backdrop-filter: blur(10px);
+}

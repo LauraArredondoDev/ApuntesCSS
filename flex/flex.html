@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/flex/flex.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="barra">
+        <a href="/index.html">
+            <i>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
+            </i>
+        </a>
+    </div>
+
+    <h2>Por qué usar display: flex?</h2>
+
+    <section id="seccion-explicacion">
+        <article id="articulo-explicacion">
+            <p>
+                Usando el tipo de display flex, <strong>se pueden usar otras propiedades de CSS que nos permiten cambiar la localización de los hijos</strong> que tenga
+                el contenedor al que se le aplique el display: flex. <strong>Si se usa otro tipo de display no se podrán estas propiedades</strong>
+            </p>
+        
+            <p>
+                Esas propiedades son:
+            </p>
+        
+            <ul>
+                <li><strong>flex-direction:</strong> Nos permite cambiar la dirección de los hijos y mostrarlos en fila o en columna</li>
+                <li><strong>justify-content:</strong> Nos permite mover a los hijos en horizontal en caso de que los elementos estén en fila o en vertical en caso de que los hijos estén en columna</li>
+                <li><strong>align-items:</strong> Nos permite mover a los hijos en vertical en caso de que los elementos estén en fila o en horizontal en caso de que estén en columna</li>
+                <li><strong>gap:</strong> Nos permite establecer una separación entre los hijos</li>
+            </ul>
+        
+            <h2>Pasos:</h2>
+            <ol>
+                <li><strong>Cambiar el display del contenedor a flex</strong> (display: flex)</li>
+                <li><strong>Establecer la dirección</strong> en la que se va a representar a los hijos del contenedor padre, puede ser en fila (flex-direction: row) o en columna (flex-direction: column). Si no se pone el flex direction por defecto la dirección será en fila</li>
+                <li>
+                    <strong>Establecer la posición</strong> de los elementos horizontalmente y verticalmente. <strong>Es importante poner tanto el justify-content como el align-items porque si solo pones uno de ellos y a los hijos del contenedor no se les ha especificado un tamaño, se van a redimensionar automáticamente y se les va a poner un tamaño distinto al que queremos</strong>
+                    <ul>
+                        <li>justify-content: Mueve los elementos hijo en horizontal en caso de que estos estén en fila o en vertical en caso de que estén en columna</li>
+                        <li>align-items: Mueve los elementos hijo en vertical en caso de que los elementos estén en fila o en horizontal en caso de que estén en columna</li>
+                    </ul>
+                </li>
+            </ol>
+        
+            <small><strong>*Opcional:</strong> Añadir un gap para establecer una separación entre los elementos hijo</small>
+
+            <h2>Ejemplo:</h2>
+
+            <img src="/flex/ejemplo_flex.png" alt="Un ejemplo de como usar el display flex en un contenedor">
+
+        </article>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QFXSgGg-HWo?si=9eD2ciJjlisKMh9a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <div>
+            <a href="https://codepen.io/smpnjn/pen/jOazqZE" target="_blank">Generador Flex</a>
+        </div>
+        
+    </section>
+    
+    <h3> justify-content: center; align-items: center;</h3>
+    <div class="caja-1 caja">
+        <button>Púlsame</button>
+        <button>Púlsame</button>
+        <button>Púlsame</button>
+    </div>
+
+    <h3> justify-content: right; align-items: center; </h3>
+    <div class="caja-2">
+        <button>Púlsame</button>
+        <button>Púlsame</button>
+        <button>Púlsame</button>
+    </div>
+
+    <h3>justify-content: left; align-items:start;</h3>
+    <div class="caja-3">
+        <button>Púlsame</button>
+        <button>Púlsame</button>
+        <button>Púlsame</button>
+    </div>
+
+    <h3>justify-content: start; align-items: center;</h3>
+    <div class="caja caja-4">
+        <button>Púlsame</button>
+        <button>Púlsame</button>
+        <button>Púlsame</button>
+    </div>
+
+    <h3>justify-content: start; align-items: center; flex-direction: column;</h3>
+    <div class="caja-5">
+        <button>Púlsame</button>
+        <button>Púlsame</button>
+        <button>Púlsame</button>
+    </div>
+
+    <h3>gap: 10px.</h3>
+    <p>Para dejar espacio entre cosas de la misma caja.</p>
+    <div class="caja-6">
+        <button>Púlsame</button>
+        <button>Púlsame</button>
+        <button>Púlsame</button>
+    </div>
+
+    <h3> justify-content: space-between; align-items: start;</h3>
+    <p>space-between pone todo el espacio posible entre los hijos del contenedor (entre los elementos de dentro de la caja)</p>
+    <div class="caja-7">
+        <button>Púlsame</button>
+        <button>Púlsame</button>
+        <button>Púlsame</button>
+    </div>
+
+    <h3>justify-content: space-around; align-items: start;</h3>
+    <p>space-around pone todo el espacio posible al rededor de los hijos del contenedor (al rededor de los elementos de dentro de la caja)</p>
+    <div class="caja-8">
+        <button>Púlsame</button>
+        <button>Púlsame</button>
+        <button>Púlsame</button>
+    </div>
+
+    <h3>justify-content: space-between; align-items:start;</h3>
+    <p>
+        Para poner tres botones a un lado y tres botones al otro lado se han metido los botones en grupos de 3 dentro de dos div y el space-between
+        está afectando a esos divs, no a los botones directamente como en los ejemplos anteriores
+    </p>
+    <div class="caja-9">
+        <div class="div">
+            <button>Púlsame</button>
+            <button>Púlsame</button>
+            <button>Púlsame</button>
+        </div>
+        <div class="div">
+            <button>Púlsame</button>
+            <button>Púlsame</button>
+            <button>Púlsame</button>
+        </div>
+    </div>
+    
+    <h3>flex-wrap:wrap;</h3>
+    <p>flex-wrap:wrap sirve para que el contenido del div se adapte al tamaño poniendose una cosa debajo de otra.</p>
+    <div class="caja-10">
+        <button>Púlsame</button>
+        <button>Púlsame</button>
+        <button>Púlsame</button>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+a {
+    background-color: #04B4F4;
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 10px;
+
+}
