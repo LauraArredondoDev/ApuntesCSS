@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    background-image: url("/efecto-glass/montaña.jpg");
+    background-image: url("./montaña.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
