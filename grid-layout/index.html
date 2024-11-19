@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grid Layout</title>
+</head>
+<body>
+    <h1>Grid Layout</h1>
+    <h3>Tenemos 9 cajas que queremos que se repartan en 3 columnas, la primera columna ocupará un 15%, la segunda será auto y la tercera ocupará 30%. Queremos 3 filas la 1ª de 100px, 2ª auto y 3ª de 200px</h3>
+
+    <div class="grid-layout-ejemplo-1">
+        <div class="caja">Caja 1</div>
+        <div class="caja">Caja 2</div>
+        <div class="caja">Caja 3</div>
+        <div class="caja">Caja 4</div>
+        <div class="caja">Caja 5</div>
+        <div class="caja">Caja 6</div>
+        <div class="caja">Caja 7</div>
+        <div class="caja">Caja 8</div>
+        <div class="caja">Caja 9</div>
+    </div>
+
+    <h3>Características de css grid para elementos individuales hijos de grid layout</h3>
+    <h3>Queremos que la caja 1 ocupe las 3 columnas, para eso vamos a decirle que se expanda desde la 1ª línea vertical hasta la 4ª y así sucesiamente con el resto de cajas.</h3>
+    <div class="grid-layout-ejemplo-3">
+        <div class="caja c1">Caja 1</div>
+        <div class="caja c2">Caja 2</div>
+        <div class="caja c3">Caja 3</div>
+        <div class="caja c4">Caja 4</div>
+        <div class="caja c5">Caja 5</div>
+        <div class="caja c6">Caja 6</div>
+        <div class="caja c7">Caja 7</div>
+        <div class="caja c8">Caja 8</div>
+        <div class="caja c9">Caja 9</div>
+    </div>
+
+
+    <h3>grid-template-areas</h3>
+    <div class="grid-layout-ejemplo-4">
+        <div class="caja cabecera">CABECERA</div>
+        <div class="caja menu">MENU</div>
+        <div class="caja contenido">CONTENIDO</div>
+        <div class="caja barra-lat">BARRA LATERAL</div>
+        <div class="caja footer">FOOTER</div>
+    </div>
+</body>
+</html>
